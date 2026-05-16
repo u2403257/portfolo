@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryakiran JS | Portfolio</title>
+    <meta name="description" content="Portfolio of Suryakiran JS, Computer Science Undergraduate.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <h1 class="logo">SK.</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Suryakiran JS</h1>
+                <h2 class="title">Computer Science Undergraduate</h2>
+                <p class="objective">
+                    Passionate student eager to learn and explore fields like software development, 
+                    web technologies, and data structures. Dedicated to developing practical skills 
+                    through projects, internships, and collaborative learning.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#explore" class="btn primary-btn">Explore My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore" class="dashboard">
+            <h2 class="section-title">My Journey</h2>
+            <div class="cards-grid">
+                
+                <!-- Education Card -->
+                <div class="card" onclick="openModal('educationModal')">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <p>BTech in Computer Science, Rajagiri School Of Engineering...</p>
+                    <span class="click-hint">Click to view details</span>
+                </div>
+                <!-- Experience Card -->
+                <div class="card" onclick="openModal('experienceModal')">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Experience</h3>
+                    <p>Cybersecurity Internship at Kozhikode Acadeno Technologies</p>
+                    <span class="click-hint">Click to view details</span>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="card" onclick="openModal('projectsModal')">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Projects</h3>
+                    <p>Shopping Website, Management Systems, and more...</p>
+                    <span class="click-hint">Click to view details</span>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="card" onclick="openModal('skillsModal')">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Skills</h3>
+                    <p>C/C++, Java, Python, Web Technologies, MySQL...</p>
+                    <span class="click-hint">Click to view details</span>
+                </div>
+
+                <!-- Achievements Card -->
+                <div class="card" onclick="openModal('achievementsModal')">
+                    <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Certifications</h3>
+                    <p>Cybersecurity, AI, Python, Java & more...</p>
+                    <span class="click-hint">Click to view details</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:u2403257@rajagiri.edu.in">u2403257@rajagiri.edu.in</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+916282832799">+91 6282832799</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>KANNUR, KL</p>
+                    </div>
+                </div>
+                
+                <div class="reference-info mt-4">
+                    <h3>Reference</h3>
+                    <p><strong>Name:</strong> Sandy joseph</p>
+                    <p><strong>Number:</strong> 9745367650</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Suryakiran JS. All rights reserved.</p>
+    </footer>
+
+    <!-- MODALS -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <!-- Education Modal -->
+    <div class="modal" id="educationModal">
+        <button class="close-modal" onclick="closeModal('educationModal')"><i class="fas fa-times"></i></button>
+        <h2 class="modal-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="modal-content">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>BTech in Computer Science & Engineering</h4>
+                    <p class="institution">Rajagiri School Of Engineering & Technology, Autonomous</p>
+                    <p class="details">Expected Graduation: 2028 | Current CGPA: 8.7</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Class XII State Board</h4>
+                    <p class="institution">Excel Public School</p>
+                    <p class="details">Year: 2024 | Score: 97.5%</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Class X State Board</h4>
+                    <p class="institution">Kuthuparamba Higher Secondary School</p>
+                    <p class="details">Year: 2022 | Score: 100%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Modal -->
+    <div class="modal" id="experienceModal">
+        <button class="close-modal" onclick="closeModal('experienceModal')"><i class="fas fa-times"></i></button>
+        <h2 class="modal-title"><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="modal-content">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Cybersecurity Intern</h4>
+                    <p class="institution">Kozhikode Acadeno Technologies</p>
+                    <p class="details">Duration: 2 Weeks | Gained practical industry experience in cybersecurity and exposure to professional workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div class="modal" id="projectsModal">
+        <button class="close-modal" onclick="closeModal('projectsModal')"><i class="fas fa-times"></i></button>
+        <h2 class="modal-title"><i class="fas fa-code"></i> Projects</h2>
+        <div class="modal-content">
+            <ul class="project-list">
+                <li>
+                    <div class="project-title">Shopping Website</div>
+                    <div class="tech-stack">HTML, CSS, JS</div>
+                </li>
+                <li>
+                    <div class="project-title">Student Record Management System</div>
+                    <div class="tech-stack">C Language</div>
+                </li>
+                <li>
+                    <div class="project-title">Simple Calculator</div>
+                    <div class="tech-stack">Java</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skills Modal -->
+    <div class="modal" id="skillsModal">
+        <button class="close-modal" onclick="closeModal('skillsModal')"><i class="fas fa-times"></i></button>
+        <h2 class="modal-title"><i class="fas fa-laptop-code"></i> Skills</h2>
+        <div class="modal-content">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <div class="skill-tags">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skill-tags alt-tags">
+                    <span>Communication</span>
+                    <span>Problem-solving</span>
+                    <span>Attention to detail</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Modal -->
+    <div class="modal" id="achievementsModal">
+        <button class="close-modal" onclick="closeModal('achievementsModal')"><i class="fas fa-times"></i></button>
+        <h2 class="modal-title"><i class="fas fa-trophy"></i> Achievements & Certifications</h2>
+        <div class="modal-content">
+            <ul class="achievement-list">
+                <li><i class="fas fa-check-circle text-accent"></i> Completed Cybersecurity Course on Coursera</li>
+                <li><i class="fas fa-check-circle text-accent"></i> Completed AI Course on Future Skills Prime</li>
+                <li><i class="fas fa-check-circle text-accent"></i> Completed Python Course in Coursera</li>
+                <li><i class="fas fa-certificate text-accent"></i> Certified in Java Programming - Udemy</li>
+                <li><i class="fas fa-shield-alt text-accent"></i> Completed TryHackMe</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
